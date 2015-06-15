@@ -2,19 +2,19 @@
 $(document).ready(function(){	
 	// Animate
 	
-	$('.productlist').toggle(
-		function (){
-//			$('.productlist').animate({ borderColor: '#959595' }, 'slow');
-			//alert('asdf');
-			$('.productlist').animate({ backgroundColor: '#959595'});			
-		},
-		function (){
-						//alert('asdf');
+	$('.productlist').hover(
+            function (){
+//              $('.productlist').animate({ borderColor: '#959595' }, 'slow');
+                //alert('asdf');
+                $('.productlist').animate({ backgroundColor: '#959595'});			
+            },
+            function (){
+                //alert('asdf');
 
-//			$('.productlist').animate({ borderColor: '#FFFFFF' }, 'slow');
-			$('.productlist').animate({ backgroundColor: '#FFFFFF'});
+//		$('.productlist').animate({ borderColor: '#FFFFFF' }, 'slow');
+                $('.productlist').animate({ backgroundColor: '#FFFFFF'});
 
-		}
+            }
 	);
 	
 	/*
@@ -44,7 +44,7 @@ $(document).ready(function(){
             $(this).find('img').stop().animate({'opacity':1}); 
         });
 	// pngFix
-	$(document).pngFix(); 
+	//$(document).pngFix(); 
         $('.productlist a, a.product_new').click(function(){
             var href = $(this).attr('rel');
             $.colorbox({href:href,
@@ -66,34 +66,34 @@ $(document).ready(function(){
 	
 	// Cycles
 	$('.slideshow').cycle({
-		//fx:'scrollHort',
-		timeout:0,
-		prev:'#prev',
-		next:'#next',
-		pager:'#nav',
-		pagerAnchorBuilder:pagerFactory
+            //fx:'scrollHort',
+            //timeout:0,
+            prev:'#prev',
+            next:'#next',
+            pager:'#nav',
+            pagerAnchorBuilder:pagerFactory
 	});
 	$('.slideshow-portfolio').cycle({
-		//fx:'scrollHort',
-		timeout:0,
-		prev:'#prev',
-		next:'#next',
-		pager:'#nav',
-		height:'474px',
-		pagerAnchorBuilder:pagerFactory
+            //fx:'scrollHort',
+            //timeout:0,
+            prev:'#prev',
+            next:'#next',
+            pager:'#nav',
+            height:'474px',
+            pagerAnchorBuilder:pagerFactory
 	});
 	$('.slideshow-product').cycle({
-		fx:'scrollVert',
-		timeout:0,
-		prev:'#prev',
-		next:'#next',
-		pager:'#nav',
-		pagerAnchorBuilder:pagerFactory
+            fx:'scrollVert',
+            timeout:0,
+            prev:'#prev',
+            next:'#next',
+            pager:'#nav',
+            pagerAnchorBuilder:pagerFactory
 	});
         var idx = $('.slideshow .item').length;
 	function pagerFactory(idx,slide){
-		var s= idx > 8 ? ' style="display:none"':'';
-		return'<li'+s+'><a href="#">'+(idx+1)+'</a></li>';
+            var s= idx > 8 ? ' style="display:none"':'';
+            return'<li'+s+'><a href="#">'+(idx+1)+'</a></li>';
 	};
 	//********* jQuery Cycle -- end *********//
 

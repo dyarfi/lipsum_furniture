@@ -108,7 +108,7 @@ ul.navigation-ul ul li {
     /*left:-90px;*/
     /*width: 190px;*/
     position: relative;
-    left:-94%;
+    left:-92%;
     text-align: left;
     padding: 0;
     width: 100%;
@@ -217,17 +217,16 @@ ul.ul-product li a:hover {
 }
 .slideshow .item {
     width: 100%;
+    display: block;
+    
     /*margin: 0 auto;*/
     /*text-align: center;*/
 }
 .slideshow {
     border: 0px solid #990000;
-    /*display: block;*/
-    overflow: hidden;
+    display: block;
+    /*overflow: hidden;*/
     /*width: 100%;*/
-}
-.slideshow .item {
-    width: 100%;
 }
 .slideshow, .slideshow-product, .slideshow-portfolio {
     background: #ffffff;
@@ -251,46 +250,46 @@ ul.ul-product li a:hover {
 }
 #nav li.activelI { background: #959595 } 
 .cbtn ul li {
-	cursor:pointer;
-	display: inline-block;
-	margin: 0px auto;
-	padding: 0px;
-	width: 15px; 
-	height: 15px;
-	border: 1px solid #ababab; 
-	-webkit-border-radius: 3px;
+    cursor:pointer;
+    display: inline-block;
+    margin: 0px auto;
+    padding: 0px;
+    width: 15px; 
+    height: 15px;
+    border: 1px solid #ababab; 
+    -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-	position: relative;
-	margin: 3px 6px 0 -3px;
-	padding: 0px;
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+    position: relative;
+    margin: 3px 6px 0 -3px;
+    padding: 0px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .cbtn ul li a {
-	color: #3b3b3b;
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+    color: #3b3b3b;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .cbtn a.btnleft,
 .cbtn a.btnright { 
-	margin: 4px auto;
-	position: relative;
-	border: 0px solid #fe57a1;
-	display: block;
-	width: 24px; 
-	height: 15px;
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+    margin: 4px auto;
+    position: relative;
+    border: 0px solid #fe57a1;
+    display: block;
+    width: 24px; 
+    height: 15px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .cbtn .btnleft {
     background: url("../img/clb.png") no-repeat scroll left center transparent !important;
 }
 .cbtn .btnright {
-	background: url("../img/crb.png") no-repeat scroll right center transparent !important;
+    background: url("../img/crb.png") no-repeat scroll right center transparent !important;
 }
 .product {
     font-size: 0.95em;
@@ -384,7 +383,7 @@ ul.ul-product li a:hover {
     position: relative;
     text-align: center;
     width: 220px; 
-    height: 270px;
+    height: 250px;
 }
 .view .mask, .view .content {
     left: 0;
@@ -392,7 +391,7 @@ ul.ul-product li a:hover {
     position: absolute;
     top: 0;
     width: 220px; 
-    height: 270px;
+    height: 250px;
 }
 .view img {
     display: block;
@@ -407,7 +406,6 @@ ul.ul-product li a:hover {
     text-indent: -9999px;
     width: 100%;
 }
-
 
 /* CSS3 EFFECTS */
 /* FIFTH EFFECTS */
@@ -427,9 +425,9 @@ ul.ul-product li a:hover {
 .effect .mask {
    opacity:0;
    overflow:visible;
-   border-color:rgba(0,0,0,0.7) transparent transparent transparent;
+   border-color:rgba(0,0,0,0.3) transparent transparent transparent;
    border-style:solid;
-   border-width:110px;
+   border-width:109px;
    width:0;
    height:0;
    -moz-transform:translateY(-125px);
@@ -458,7 +456,7 @@ ul.ul-product li a:hover {
 
 }
 .effect:hover img {
-    opacity:0.5;
+    opacity:0.7;
    /*-moz-transform:scale(1.2,1.2);*/
    /*-webkit-transform:scale(1.2,1.2);*/
    /*-o-transform:scale(1.2,1.2);*/
@@ -474,7 +472,7 @@ ul.ul-product li a:hover {
    transform: translateY(0px);
 }
 .effect:hover a.info {
-	opacity:1;
+   opacity:1;
    -moz-transform:translateY(60px);
    -webkit-transform:translateY(60px);
    -o-transform:translateY(60px);
@@ -506,14 +504,22 @@ ul.ul-product li a:hover {
 }
 .productlist {
     display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 5px;
     overflow: hidden;
     text-align: left;
     width: 220px; 
-    height: 270px; 
+    height: 250px; 
     border: 1px solid #FFFFFF;
 }
 .productlist:hover {
     border: 1px solid #959595;	
+}
+.productlist img {
+    margin: 0 auto;
+    display: block;
+    text-align: center !important;
+    width: 190px;
 }
 .portfolio .cbtn {
     top: 0px; position: relative;
@@ -891,9 +897,19 @@ img { -ms-interpolation-mode: bicubic; }
 				WEBKIT CSS
 ------------------------------------------------*/
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    .item a {
-            display: inline-block;
+    ul.navigation-ul ul li {
+        left:-88%;
     }
+    .item a {
+        display: inline-block;
+    }
+    .productlist {
+       /*display: inline;*/
+    }
+    #cboxTopLeft{background-position: -101px 0;}
+    #cboxTopRight{background-position:-130px 0;}
+    #cboxBottomLeft{background-position:-101px -29px;}
+    #cboxBottomRight{background-position:-130px -29px;}    
     .item a img, 
     .item a.colorbox.cboxElement img
     { display: block !important; float: left; position: relative; }

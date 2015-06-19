@@ -120,3 +120,9 @@
 .ft12 {
 	font-size: 12em;
 }
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}

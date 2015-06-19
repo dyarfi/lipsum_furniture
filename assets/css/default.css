@@ -14,30 +14,36 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
 */
 
 body {
-	font-family: Tahoma, Verdana, Arial;
-	color: #959595;
+    font-family: Tahoma, Verdana, Arial;
+    color: #959595;
+    text-rendering: optimizeLegibility; font-smoothing: antialiased; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
 }
-a { color: #ffffff; outline:none !important; }
+a { color: #ffffff; outline:none !important; 
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
 a:hover { text-decoration: none; color: #ffffff }
 h1, h2, h3, h4 {
-	font-family:'Arcus-Regular';
-	margin: 0 auto;
-	font-weight: normal;
-	color: #fff;
+    font-family:'Arcus-Regular';
+    margin: 0 auto;
+    font-weight: normal;
+    color: #fff;
 }
 #container {
-	width: 964px;
-	min-height: 620px;
-	height: 100%;
-	margin: 0 auto;
-	border: 0px solid #990000
+    width: 964px;
+    /*min-height: 620px;*/
+    /*height: 100%;*/
+    float: none;
+    margin: 0 auto;
+    border: 0px solid #990000
 }
 .top-holder {
-	margin: 10px auto 0px auto;
-        position: relative;
-        display: block;
-        height: 90px;
-        /*border:1px solid #ff0000;*/
+    margin: 10px auto 0px auto;
+    position: relative;
+    display: block;
+    height: 90px;
+    /*border:1px solid #ff0000;*/
 }
 .logo { 
     display: block;
@@ -96,7 +102,7 @@ ul.navigation-ul ul {
     width: 100%;
     left: 0%;
     position: absolute;
-    top: 90%;
+    top: 91%;
     z-index: 598;
     /*width: 100% !important;*/   
     /*overflow: hidden;*/
@@ -108,7 +114,7 @@ ul.navigation-ul ul li {
     /*left:-90px;*/
     /*width: 190px;*/
     position: relative;
-    left:-92%;
+    left:-94%;
     text-align: left;
     padding: 0;
     width: 100%;
@@ -117,7 +123,7 @@ ul.navigation-ul ul li a {
     width:100%;
     display: block;
     color: #fff;
-    font-size: 0.80em;
+    font-size: 0.90em;
     background: rgba(88, 88, 88, 0.75);
     margin: 0 auto;
     padding: 0 0 0 6px;
@@ -180,7 +186,8 @@ ul.ul-product li a:hover {
 
 #content {
     position:relative;
-    min-height: 425px;
+    /*max-height: 425px;*/
+    /*height: 425px;*/    
     padding:15px 0 10px 0;
     margin:0px 10px;
     border-top:1px solid #ababab;
@@ -235,18 +242,23 @@ ul.ul-product li a:hover {
     z-index: 0;
 }
 .cbtn {
-	margin: 10px auto 0 auto;
-	padding: 2px;
-	min-width: 25%;
-	width: 25%;
-	height: 18px;
-	display: block;
+    margin: 10px auto 0 auto;
+    padding: 2px;
+    min-width: 25%;
+    width: 25%;
+    height: 18px;
+    display: block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 9px;
+    z-index: 1
 }
 .cbtn #nav {
-	text-align: center;
-	margin: 0 auto;
-	width: 100%;
-	border: 0px solid #990000;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    border: 0px solid #990000;
 }
 #nav li.activelI { background: #959595 } 
 .cbtn ul li {
@@ -275,15 +287,16 @@ ul.ul-product li a:hover {
 }
 .cbtn a.btnleft,
 .cbtn a.btnright { 
-    margin: 4px auto;
+    margin: 2px auto;
     position: relative;
     border: 0px solid #fe57a1;
     display: block;
-    width: 24px; 
+    width: 24px;
     height: 15px;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
+    background: transparent;
 }
 .cbtn .btnleft {
     background: url("../img/clb.png") no-repeat scroll left center transparent !important;
@@ -373,6 +386,7 @@ ul.ul-product li a:hover {
 }
 .content-holder {
     margin: 0px 20px;
+    font-size: 1.20em
 }
 
 .view {
@@ -383,7 +397,7 @@ ul.ul-product li a:hover {
     position: relative;
     text-align: center;
     width: 220px; 
-    height: 250px;
+    height: 250px; 
 }
 .view .mask, .view .content {
     left: 0;
@@ -391,7 +405,8 @@ ul.ul-product li a:hover {
     position: absolute;
     top: 0;
     width: 220px; 
-    height: 250px;
+    height: 250px; 
+    /*border:1px solid #990000;*/
 }
 .view img {
     display: block;
@@ -485,6 +500,7 @@ ul.ul-product li a:hover {
 .ptitle a {
     color: #000;
     font-family: 'Arcus-Regular';
+    display: block;    
 }
 .ptitle, .pprice, .pdescs {
     margin: 0 0 0 10px;
@@ -600,7 +616,7 @@ ul.ul-product li a:hover {
 .portholder {
     /*width:100%;*/
     /*display: inline-block;*/
-    width: 940px;
+    width: 100%;
     margin: 0 auto;
     background: transparent;
 }
@@ -830,7 +846,7 @@ ul.ul-product li a:hover {
 	height: 142px;
 }
 .lorem_form_short textarea {
-	width: 442px !important;
+	width: 434px !important;
 	right: 20px;
 }
 .lorem_form input[type="text"],
@@ -892,19 +908,170 @@ ul.ul-product li a:hover {
 }
 /** ie 7 **/
 img { -ms-interpolation-mode: bicubic; }
+
 /** Bootstrap **/
+/*
+@media (max-width: 990px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-nav {
+        float: none !important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+*/
+
+.navbar {
+    border-radius: 0px;
+}
+.navbar-default {
+    background: none;
+    border: none;
+    /*font-size: 0.82em*/
+}
+.navbar-header {
+    margin: 0px;
+    padding: 0px;
+}
+.navbar-nav > li > a {
+    padding: 15px 10px 10px 10px;
+}
+.navbar-right {
+    margin-right: 5px;
+}
+#carousel-home .carousel-indicators, #carousel-product .carousel-indicators, #carousel-portfolio .carousel-indicators {
+    margin: 0px auto 0px auto;
+    /*padding: 2px;*/
+    /*min-width: 25%;*/
+    /*width: 100%;*/
+    /*height: 18px;*/
+    display: block;
+    position: absolute;
+    /*overflow: hidden;*/
+    bottom: -27px;
+    left: 0px;
+    right: 0px;
+    width: 20%;
+    border: 0px solid #ff0000;
+}
+#carousel-portfolio .carousel-indicators {
+    bottom: -5px;
+}
+
+#carousel-home .carousel-indicators li.active, #carousel-product .carousel-indicators li.active, #carousel-portfolio .carousel-indicators li.active { background: #959595 } 
+#carousel-home .carousel-indicators li, #carousel-product .carousel-indicators li, #carousel-portfolio .carousel-indicators li {
+    cursor:pointer;
+    display: inline-block;
+    margin: 0px auto;
+    padding: 0px;
+    width: 15px; 
+    height: 15px;
+    border: 1px solid #ababab; 
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+    margin: 3px 6px 0 -3px;
+    padding: 0px;
+    text-indent: 100%;
+    white-space: nowrap;
+    /*overflow: hidden;*/
+}
+#carousel-home .carousel-indicators li a, #carousel-product .carousel-indicators li a, #carousel-portfolio .carousel-indicators li a {
+    color: #3b3b3b;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#carousel-home .carousel-caption, #carousel-product .carousel-caption, #carousel-portfolio .carousel-caption {
+    font-family: "TFPironv2";
+    font-weight: normal;
+    font-size: 1.25em;
+    line-height: 1.1em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+}
+#carousel-home .carousel-inner .item {
+    /*height: 459px*/
+}
+
+
+#carousel-portfolio .carousel-inner {
+    display: block;
+    height: 490px !important;
+}
+
+.vertical .carousel-inner {
+  height: 100%;
+}
+
+.carousel.vertical .item {
+  -webkit-transition: 0.6s ease-in-out top;
+     -moz-transition: 0.6s ease-in-out top;
+      -ms-transition: 0.6s ease-in-out top;
+       -o-transition: 0.6s ease-in-out top;
+          transition: 0.6s ease-in-out top;
+}
+.carousel.vertical .active {
+  top: 0;
+}
+.carousel.vertical .next {
+  top: 780px;
+}
+
+.carousel.vertical .prev {
+  top: -780px;
+}
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+  top: 0;
+}
+
+.carousel.vertical .active.left {
+  top: -780px;
+}
+
+.carousel.vertical .active.right {
+  top: 780px;
+}
+
+.carousel.vertical .item {
+    left: 0;
+}
+
 /*----------------------------------------------
 				WEBKIT CSS
 ------------------------------------------------*/
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     ul.navigation-ul ul li {
-        left:-88%;
+        left:-86%;
     }
     .item a {
         display: inline-block;
     }
     .productlist {
        /*display: inline;*/
+    }
+    #carousel-portfolio .carousel-indicators {
+        bottom: -7px;
     }
     #cboxTopLeft{background-position: -101px 0;}
     #cboxTopRight{background-position:-130px 0;}

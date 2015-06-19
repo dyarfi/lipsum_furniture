@@ -1,10 +1,12 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=0, user-scalable=no" />   
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=0, user-scalable=no" />  
 <link rel="stylesheet" href="assets/css/bootstrap.min.css"  />
 <link rel="stylesheet" href="assets/css/fonts.css"  />
+<link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css"  />
 <link rel="stylesheet" href="assets/css/helper.css"  />
 <link rel="stylesheet" href="assets/css/colorbox/colorbox.css"  />
 <link rel="stylesheet" href="assets/css/default.css"  />
@@ -44,35 +46,39 @@
     </div>	
 	<div id="content">
             <div class="row-fluid">
-                <div class="slideshow-portfolio">
-                    <div class="portholder active">
-                        <div class="port1">
-                            <div>01</div>
-                            <a href="assets/img/port1l.jpg" title="Portfolio 1" rel="colorbox" class="colorbox">
-                                <img src="assets/img/port1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="port2">
-                            <div>02</div>
-                            <a href="assets/img/port2l.jpg" title="Portfolio 2" rel="colorbox" class="colorbox">
-                                <img src="assets/img/port2.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="port3">
-                            <div>03</div>
-                            <a href="assets/img/port3l.jpg" title="Portfolio 3" rel="colorbox" class="colorbox">
-                                <img src="assets/img/port3.jpg" alt="">
-                            </a>
-                        </div>		
-                        <div class="port4">
-                            <div>04</div>
-                            <a href="assets/img/port4l.jpg" title="Portfolio 4" rel="colorbox" class="colorbox">
-                                <img src="assets/img/port4.jpg" alt="">				
-                            </a>
-                        </div>	
-                        <div class="portdesc">
-                            <div class="desc_content">
-                                <ol type="number">
+                <!--<div class="slideshow-portfolio">-->
+                 <div id="carousel-portfolio" class="carousel slide" data-ride="carousel-portfolio">
+                    <!--<div class="plists">-->
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active portholder" role="listbox">
+                            <div class="port1">
+                                <div>01</div>
+                                <a href="assets/img/port1l.jpg" title="Portfolio 1" rel="colorbox" class="colorbox">
+                                    <img src="assets/img/port1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="port2">
+                                <div>02</div>
+                                <a href="assets/img/port2l.jpg" title="Portfolio 2" rel="colorbox" class="colorbox">
+                                    <img src="assets/img/port2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="port3">
+                                <div>03</div>
+                                <a href="assets/img/port3l.jpg" title="Portfolio 3" rel="colorbox" class="colorbox">
+                                    <img src="assets/img/port3.jpg" alt="">
+                                </a>
+                            </div>		
+                            <div class="port4">
+                                <div>04</div>
+                                <a href="assets/img/port4l.jpg" title="Portfolio 4" rel="colorbox" class="colorbox">
+                                    <img src="assets/img/port4.jpg" alt="">				
+                                </a>
+                            </div>	
+                            <div class="portdesc">
+                                <div class="desc_content">
+                                    <ol type="number">
                                         <li><b>Modern Danish inspired living room design</b>
 (Custom made sofa, custom made table, maple wood flooring)</li>
                                         <li><b>Warm Country Kitchen Set</b>
@@ -81,56 +87,63 @@
 (Custom made table set, custom made Bar island, concrete flooring)</li>
                                         <li><b>Unique shaped with enough light Bedroom</b>
 (Custom made lamp, custom made table, hard wood flooring)</li>
-                                </ol>
+                                    </ol>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="portholder">
-                        <div class="port1">
-                            <div>01</div>
-                            <a href="assets/img/port1l.jpg" title="Portfolio 1" rel="colorbox" class="colorbox">
-                                <img src="assets/img/port1.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="port2">
-                            <div>02</div>
-                            <a href="assets/img/port2l.jpg" title="Portfolio 2" rel="colorbox" class="colorbox">
-                                <img src="assets/img/port2.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="port3">
-                            <div>03</div>
-                            <a href="assets/img/port3l.jpg" title="Portfolio 3" rel="colorbox" class="colorbox">
-                                <img src="assets/img/port3.jpg" alt="">
-                            </a>
-                        </div>		
-                        <div class="port4">
-                            <div>04</div>
-                            <a href="assets/img/port4l.jpg" title="Portfolio 4" rel="colorbox" class="colorbox">
-                                <img src="assets/img/port4.jpg" alt="">				
-                            </a>
-                        </div>	
-                        <div class="portdesc">
-                            <div class="desc_content">
-                                <ol type="number">
-                                    <li><b>Lorem Ipsum Dolor Sit Amet Consecteteur</b>
-(Custom made sofa, custom made table, maple wood flooring)</li>
-                                    <li><b>It is a long established fact</b>
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </li>
-                                    <li><b>DANSK Danish Cafe & Bar</b>
-(Custom made table set, custom made Bar island, concrete flooring)</li>
-                                    <li><b>Unique shaped with enough light Bedroom</b>
-(Custom made lamp, custom made table, hard wood flooring)</li>
-                                </ol>
+                        <div class="item portholder" role="listbox">
+                            <div class="port1">
+                                <div>01</div>
+                                <a href="assets/img/port1l.jpg" title="Portfolio 1" rel="colorbox" class="colorbox">
+                                    <img src="assets/img/port1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="port2">
+                                <div>02</div>
+                                <a href="assets/img/port2l.jpg" title="Portfolio 2" rel="colorbox" class="colorbox">
+                                    <img src="assets/img/port2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="port3">
+                                <div>03</div>
+                                <a href="assets/img/port3l.jpg" title="Portfolio 3" rel="colorbox" class="colorbox">
+                                    <img src="assets/img/port3.jpg" alt="">
+                                </a>
+                            </div>		
+                            <div class="port4">
+                                <div>04</div>
+                                <a href="assets/img/port4l.jpg" title="Portfolio 4" rel="colorbox" class="colorbox">
+                                    <img src="assets/img/port4.jpg" alt="">				
+                                </a>
                             </div>	
-                        </div>
+                            <div class="portdesc">
+                                <div class="desc_content">
+                                    <ol type="number">
+                                        <li><b>Lorem Ipsum Dolor Sit Amet Consecteteur</b>
+    (Custom made sofa, custom made table, maple wood flooring)</li>
+                                        <li><b>It is a long established fact</b>
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </li>
+                                        <li><b>DANSK Danish Cafe & Bar</b>
+    (Custom made table set, custom made Bar island, concrete flooring)</li>
+                                        <li><b>Unique shaped with enough light Bedroom</b>
+    (Custom made lamp, custom made table, hard wood flooring)</li>
+                                    </ol>
+                                </div>	
+                            </div>
+                        </div>                            
                     </div>
+                    <!-- Indicators -->
+                    <div class="row-fluid">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carousel-portfolio" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel-portfolio" data-slide-to="1"></li>
+                        </ol>                           
+                    </div>                        
                 </div>
             </div>
             <div class="cbtn row-fluid">
-                <a href="#" class="btnleft pull-left" id="prev">Prev</a> 
-                <a href="#" class="btnright pull-right" id="next">Next</a>
-                <ul id="nav"></ul>
+                <a href="#carousel-portfolio" class="btnleft pull-left" id="prev" role="button" data-slide="prev">Prev</a> 
+                <a href="#carousel-portfolio" class="btnright pull-right" id="next" role="button" data-slide="next">Next</a>
             </div>
 	</div>
 	<div class="footer">

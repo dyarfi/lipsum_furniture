@@ -91,7 +91,7 @@ $(document).ready(function(){
 	});
         $('#carousel-product').on('slide.bs.carousel', function () {
             //$(this).find('.carousel-caption').css({'bottom':'90px'});
-            $(this).fadeOut(150).fadeIn(150);
+            $(this).find('.carousel-inner').fadeOut(350).fadeIn(350);
             //$(this).find('.carousel-inner').fadeOut(350).fadeIn(350);
             //$(this).find('.carousel-caption').css({'bottom':'90px'});
 	});
